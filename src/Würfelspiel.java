@@ -29,9 +29,51 @@ public class Würfelspiel {
                 System.out.println(randomnumber);
                 System.out.println(randomnumber1);
 
+                if
+
+
+
             }
         }
 
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
