@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Würfelspiel {
+public class Wuerfelspiel {
     public static void main(String[] args) {
         //Erstelle ein Würfelspiel! Du spielst gegen den Computer.
         // Wenn das Spiel startet (mit einem kleinen Menü), hat der Spieler 6 Würfe. //Er spielt dabei gegen den Computer.
@@ -10,7 +10,7 @@ public class Würfelspiel {
         int spieler1 = 0;
         int spieler2 = 0;
         int rounds = 6;
-        System.out.println("Wilkommen zum Würfelspiel!");
+        System.out.println("Wilkommen zum Wuerfelspiel!");
 
 
 

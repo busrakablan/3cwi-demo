@@ -1,3 +1,5 @@
+package at.buesra.projects.basics.games;
+
 import java.util.Scanner;
 
 public class Bankomat {

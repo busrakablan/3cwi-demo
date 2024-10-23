@@ -1,3 +1,5 @@
+package at.buesra.projects.basics.loops;
+
 import java.util.Random;
 
 public class switchstatements {

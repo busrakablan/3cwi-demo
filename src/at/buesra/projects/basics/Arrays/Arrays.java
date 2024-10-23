@@ -1,3 +1,5 @@
+package at.buesra.projects.basics.Arrays;
+
 public class Arrays {
     public static void main(String[] args) {
 

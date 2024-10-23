@@ -1,3 +1,5 @@
+package at.buesra.projects.basics.loops;
+
 public class loopsaufgabe1 {
     public static void main(String[] args) {
 
