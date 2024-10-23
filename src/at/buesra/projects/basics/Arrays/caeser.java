@@ -1,6 +1,6 @@
 package at.buesra.projects.basics.Arrays;
 
-public class Cäser {
+public class caeser {
     public static void main(String[] args) {
     String result = encrypt("abc");
         System.out.println(result);
@@ -13,7 +13,10 @@ public class Cäser {
 
         }
         return "";
-        System.out.println(result);
+        System.out.println();
+
+
+
     }
 
     public static String decrypt(String data) {
