@@ -1,3 +1,5 @@
+package at.buesra.projects.basics.games;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -10,7 +12,7 @@ public class Wuerfelspiel {
         int spieler1 = 0;
         int spieler2 = 0;
         int rounds = 6;
-        System.out.println("Wilkommen zum Wuerfelspiel!");
+        System.out.println("Wilkommen zum at.buesra.projects.basics.games.Wuerfelspiel!");
 
 
 
