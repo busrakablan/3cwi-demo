@@ -11,6 +11,11 @@ public class DasErsteObjekt {
         c1.carSpiritverbrauch = 8;
         c1.carserialNumber = "BK54BK";
         c1.fuelAmount = 80;
+        c1.dobreak();
+        c1.turboBoost();
+        c1.amountOfRepetitions(3);
+        c1.getRemainingRange();
+
 
         //System.out.println(c1.carserialNumber);
 
