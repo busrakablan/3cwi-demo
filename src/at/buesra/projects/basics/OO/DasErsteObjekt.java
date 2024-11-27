@@ -22,5 +22,8 @@ public class DasErsteObjekt {
         System.out.println(c1.fuelAmount);
         c1.drive();
         System.out.println(c1.fuelAmount);
+
+
+
     }
 }
