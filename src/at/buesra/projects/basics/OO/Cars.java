@@ -4,24 +4,25 @@ public class Cars {
 
     //Instanz/Gedächtnisvariablen
 
-    public int carSpiritverbrauch;
-    public String carcolor;
-    public String carserialNumber;
-    public int fuelAmount;
-    public int turboBoost;
-    public int amountOfRepetitions;
-    public int getRemainingRange;
+    private int fuelUsage;
+    private String carcolor;
+    private String carserialNumber;
+    private int fuelAmount;
 
-    public  Cars(int cS, String carColor, String carSerialNumber ){
-    this.carSpiritverbrauch = cS;
-    this.carcolor=carColor;
-    this.carserialNumber=carSerialNumber;
+    private int amountOfRepetitions;
+    private int getRemainingRange;
+
+    public Cars(int fuelUsage, String carColor, String carSerialNumber,int fuelAmount) {
+        this.fuelUsage = fuelUsage;
+        this.carcolor = carColor;
+        this.carserialNumber = carSerialNumber;
+        this.fuelAmount = fuelAmount;
     }
 
     //Methode
     public void drive() {
         this.fuelAmount = this.fuelAmount
-                - carSpiritverbrauch;
+                - fuelUsage;
         //System.out.println("I'm driving");
     }
 
@@ -31,10 +32,10 @@ public class Cars {
     }
 
     public void turboBoost() {
-        if (fuelAmount > carSpiritverbrauch * 0.1) {
-            //System.out.println("SuperBoostMode");
+        if (fuelAmount > fuelUsage * 0.1) {
+            System.out.println("SuperBoostMode");
         } else {
-            //System.out.println("Not enough fuel to go to Superboost");
+            System.out.println("Not enough fuel to go to Superboost");
         }
     }
 
@@ -44,8 +45,69 @@ public class Cars {
         }
     }
 
-    public void getRemainingRange(){
-        getRemainingRange=carSpiritverbrauch/fuelAmount;
+    public void getRemainingRange() {
+        getRemainingRange = fuelUsage / fuelAmount;
         //System.out.println(getRemainingRange);
     }
+
+    public void setFuelUsage(int fuelUsage) {
+        this.fuelUsage = fuelUsage;
+
+    }
+
+    public void setCarcolor(String carcolor) {
+        this.carcolor = carcolor;
+    }
+
+    public void setCarserialNumber(String carserialNumber) {
+        this.carserialNumber = carserialNumber;
+    }
+
+    public void setFuelAmount(int fuelAmount) {
+        if (fuelAmount > 100) {
+            this.fuelAmount = 100;
+        } else {
+
+        }
+        this.fuelAmount = fuelAmount;
+    }
+
+    public void setAmountOfRepetitions(int amountOfRepetitions) {
+        this.amountOfRepetitions = amountOfRepetitions;
+    }
+
+    public void setGetRemainingRange(int getRemainingRange) {
+        this.getRemainingRange = getRemainingRange;
+    }
+
+
+
+    public String getCarcolor() {
+        return carcolor;
+    }
+
+    public int getFuelUsage() {
+        return fuelUsage;
+    }
+
+    public int getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public String getCarserialNumber() {
+        return carserialNumber;
+    }
+
+    public int getAmountOfRepetitions() {
+        return amountOfRepetitions;
+    }
+
+
+
+    public int getGetRemainingRange() {
+        return getRemainingRange;
+    }
 }
+
+
+
