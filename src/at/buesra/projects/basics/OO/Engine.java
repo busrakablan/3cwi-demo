@@ -1,7 +1,25 @@
 package at.buesra.projects.basics.OO;
 
 public class Engine {
-    private enum TYPE{DIESEL,BENZIN};
+    public enum TYPE{DIESEL,BENZIN};
     private int horspower;
-    private String type; // Diesel oder Benzin
+    private TYPE type;
+
+    public Engine(int horspower, TYPE type) {
+        this.horspower = horspower;
+        this.type = type;
+    }
+
+    public void drive(int amount) {
+        System.out.println("the motor is running with" + amount);
+    }
+
+    public int getHorspower() {
+        return horspower;
+    }
+
+    public TYPE getType() {
+        return type;
+
+    }
 }
