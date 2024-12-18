@@ -9,7 +9,7 @@ public class Engine {
         this.horspower = horspower;
         this.type = type;
     }
-
+    // amount should be bewtween 0 and 100
     public void drive(int amount) {
         System.out.println("the motor is running with" + amount);
     }

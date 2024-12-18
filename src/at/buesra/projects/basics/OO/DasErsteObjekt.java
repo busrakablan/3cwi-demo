@@ -7,7 +7,7 @@ public class DasErsteObjekt {
         //  Ein Auto hat Eigenschaften (Farbe, Spritverbrauch, Seriennummer) und Fähigkeiten (fahren, bremsen).
 
         Engine e1 = new Engine(250, Engine.TYPE.BENZIN);
-        Cars c1 = new Cars(10,"blue","1234",70);
+        Cars c1 = new Cars(e1,100,"blue","1234",100);
 
         c1.setFuelAmount(80);
 
@@ -19,9 +19,9 @@ public class DasErsteObjekt {
         c1.getRemainingRange();
 
 
-        Cars c2 = new Cars(18, "blue", "1234",70 );
+        Cars c2 = new Cars(e1, 100, "blue","1234",100 );
 
-        //System.out.println(c2.carSpiritverbrauch);
+        //System.out.println(c2.carSpiritverbrauch);"
 
 
         System.out.println(c1.getCarcolor());

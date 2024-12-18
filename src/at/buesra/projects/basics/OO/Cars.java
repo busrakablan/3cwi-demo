@@ -3,7 +3,7 @@ package at.buesra.projects.basics.OO;
 public class Cars {
 
     //Instanz/Gedächtnisvariablen
-
+    private  Engine engine;
     private int fuelUsage;
     private String carcolor;
     private String carserialNumber;
@@ -12,7 +12,8 @@ public class Cars {
     private int amountOfRepetitions;
     private int getRemainingRange;
 
-    public Cars(int fuelUsage, String carColor, String carSerialNumber,int fuelAmount) {
+    public Cars(Engine engine,int fuelUsage, String carColor, String carSerialNumber,int fuelAmount) {
+        this.engine = engine;
         this.fuelUsage = fuelUsage;
         this.carcolor = carColor;
         this.carserialNumber = carSerialNumber;
@@ -80,6 +81,9 @@ public class Cars {
         this.getRemainingRange = getRemainingRange;
     }
 
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
 
 
     public String getCarcolor() {
@@ -106,6 +110,10 @@ public class Cars {
 
     public int getGetRemainingRange() {
         return getRemainingRange;
+    }
+
+    public Engine getEngine() {
+        return engine;
     }
 }
 
