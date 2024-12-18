@@ -8,23 +8,26 @@ public class Cars {
     private String carcolor;
     private String carserialNumber;
     private int fuelAmount;
+    private int speed;
 
     private int amountOfRepetitions;
     private int getRemainingRange;
 
-    public Cars(Engine engine,int fuelUsage, String carColor, String carSerialNumber,int fuelAmount) {
+    public Cars(Engine engine,int fuelUsage, String carColor, String carSerialNumber,int fuelAmount, int speed) {
         this.engine = engine;
         this.fuelUsage = fuelUsage;
         this.carcolor = carColor;
         this.carserialNumber = carSerialNumber;
         this.fuelAmount = fuelAmount;
+        this.speed= speed;
     }
 
     //Methode
     public void drive() {
-        this.fuelAmount = this.fuelAmount
-                - fuelUsage;
+        //this.fuelAmount = this.fuelAmount- fuelUsage;
         //System.out.println("I'm driving");
+
+
     }
 
     public void dobreak() {
@@ -45,6 +48,8 @@ public class Cars {
             //System.out.println("Tuuut");
         }
     }
+
+
 
     public void getRemainingRange() {
         getRemainingRange = fuelUsage / fuelAmount;

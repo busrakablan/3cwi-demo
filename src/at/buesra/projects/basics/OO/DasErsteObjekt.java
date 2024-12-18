@@ -6,8 +6,8 @@ public class DasErsteObjekt {
         // Wir bauen das erste Objekt. Ein Auto!
         //  Ein Auto hat Eigenschaften (Farbe, Spritverbrauch, Seriennummer) und Fähigkeiten (fahren, bremsen).
 
-        Engine e1 = new Engine(250, Engine.TYPE.BENZIN);
-        Cars c1 = new Cars(e1,100,"blue","1234",100);
+        Engine e1 = new Engine(250, Engine.TYPE.BENZIN, 50);
+        Cars c1 = new Cars(e1,100,"blue","1234",100,100);
 
         c1.setFuelAmount(80);
 
