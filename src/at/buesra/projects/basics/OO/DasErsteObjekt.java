@@ -11,6 +11,8 @@ public class DasErsteObjekt {
 
         c1.setFuelAmount(80);
 
+        // test
+
         System.out.println(c1.getFuelUsage());
 
         c1.dobreak();
@@ -19,7 +21,7 @@ public class DasErsteObjekt {
         c1.getRemainingRange();
 
 
-        Cars c2 = new Cars(e1, 100, "blue","1234",100 );
+        //Cars c2 = new Cars(e1, 100, "blue","1234",100 );
 
         //System.out.println(c2.carSpiritverbrauch);"
 
