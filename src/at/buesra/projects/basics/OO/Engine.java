@@ -24,14 +24,7 @@ public class Engine {
         }
     }
 
-    public int getHorspower() {
-        return horspower;
-    }
 
-    public TYPE getType() {
-        return type;
-
-    }
 
     public int getTank() {
         return tank;

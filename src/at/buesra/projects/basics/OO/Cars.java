@@ -61,13 +61,6 @@ public class Cars {
 
     }
 
-    public void setCarcolor(String carcolor) {
-        this.carcolor = carcolor;
-    }
-
-    public void setCarserialNumber(String carserialNumber) {
-        this.carserialNumber = carserialNumber;
-    }
 
     public void setFuelAmount(int fuelAmount) {
         if (fuelAmount > 100) {
@@ -78,38 +71,7 @@ public class Cars {
         this.fuelAmount = fuelAmount;
     }
 
-    public void setAmountOfRepetitions(int amountOfRepetitions) {
-        this.amountOfRepetitions = amountOfRepetitions;
-    }
 
-    public void setGetRemainingRange(int getRemainingRange) {
-        this.getRemainingRange = getRemainingRange;
-    }
-
-    public void setEngine(Engine engine) {
-        this.engine = engine;
-    }
-
-
-    public String getCarcolor() {
-        return carcolor;
-    }
-
-    public int getFuelUsage() {
-        return fuelUsage;
-    }
-
-    public int getFuelAmount() {
-        return fuelAmount;
-    }
-
-    public String getCarserialNumber() {
-        return carserialNumber;
-    }
-
-    public int getAmountOfRepetitions() {
-        return amountOfRepetitions;
-    }
 
 
 
