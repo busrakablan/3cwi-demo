@@ -8,4 +8,17 @@ public class Mirror {
         this.size = size;
         this.position = position;
     }
+
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public void getPosAndSize(){
+        System.out.println("size: " + this.size + "\tposition: " + this.position);
+    }
 }

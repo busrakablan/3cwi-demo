@@ -1,5 +1,8 @@
 package at.buesra.projects.basics.OO;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cars {
 
     //Instanz/Gedächtnisvariablen
@@ -9,6 +12,7 @@ public class Cars {
     private String carserialNumber;
     private int fuelAmount;
     private int speed;
+    private List<Mirror> mirrors;
 
     private int amountOfRepetitions;
     private int getRemainingRange;
@@ -20,6 +24,15 @@ public class Cars {
         this.carserialNumber = carSerialNumber;
         this.fuelAmount = fuelAmount;
         this.speed= speed;
+        this.mirrors = new ArrayList<>();
+    }
+
+    public void addMirror(Mirror mirror) {
+        this.mirrors.add(mirror);
+    }
+
+    public List<Mirror> getMirrors() {
+        return mirrors;
     }
 
     //Methode
@@ -37,9 +50,9 @@ public class Cars {
 
     public void turboBoost() {
         if (fuelAmount > fuelUsage * 0.1) {
-            System.out.println("SuperBoostMode");
+            //System.out.println("SuperBoostMode");
         } else {
-            System.out.println("Not enough fuel to go to Superboost");
+            //System.out.println("Not enough fuel to go to Superboost");
         }
     }
 

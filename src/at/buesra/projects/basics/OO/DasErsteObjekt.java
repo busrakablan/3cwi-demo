@@ -7,7 +7,13 @@ public class DasErsteObjekt {
         //  Ein Auto hat Eigenschaften (Farbe, Spritverbrauch, Seriennummer) und Fähigkeiten (fahren, bremsen).
 
         Engine e1 = new Engine(250, Engine.TYPE.BENZIN, 50);
+        Mirror m1 = new Mirror(100,0);
+        Mirror m2 = new Mirror(95,-35);
         Cars c1 = new Cars(e1,100,"blue","1234",100,100);
+        c1.addMirror(m1);
+        c1.addMirror(m2);
+
+        c1.getMirrors().get(0).getPosAndSize();
 
         c1.setFuelAmount(80);
 
