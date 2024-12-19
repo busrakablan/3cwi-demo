@@ -19,6 +19,8 @@ public class Engine {
             this.tank -= 1;
         } else if (speed<60) {
             this.tank -= 3;
+        } else if (speed>60) {
+            this.tank-=5;
         }
     }
 

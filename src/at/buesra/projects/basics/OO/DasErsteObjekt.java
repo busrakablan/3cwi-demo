@@ -13,7 +13,7 @@ public class DasErsteObjekt {
 
         // test
 
-        System.out.println(c1.getFuelUsage());
+        //System.out.println(c1.getFuelUsage());
 
         c1.dobreak();
         c1.turboBoost();
@@ -26,12 +26,13 @@ public class DasErsteObjekt {
         //System.out.println(c2.carSpiritverbrauch);"
 
 
-        System.out.println(c1.getCarcolor());
+        //System.out.println(c1.getCarcolor());
 
-        System.out.println(c1.getCarserialNumber());
-        c1.drive();
-        System.out.println(c1.getFuelAmount());
+        //System.out.println(c1.getCarserialNumber());
+        //c1.drive();
+        //System.out.println(c1.getFuelAmount());
 
-
+        c1.getEngine().drive(100);
+        System.out.println(c1.getEngine().getTank());
     }
 }
