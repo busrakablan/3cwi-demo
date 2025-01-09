@@ -1,6 +1,7 @@
 package at.buesra.projects.basics.OO;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Cars {
@@ -13,6 +14,7 @@ public class Cars {
     private int fuelAmount;
     private int speed;
     private List<Mirror> mirrors;
+    private List <wheel> wheels;
 
     private int amountOfRepetitions;
     private int getRemainingRange;
@@ -25,6 +27,7 @@ public class Cars {
         this.fuelAmount = fuelAmount;
         this.speed= speed;
         this.mirrors = new ArrayList<>();
+        this.wheels = new ArrayList<>();
     }
 
     public void addMirror(Mirror mirror) {
@@ -35,6 +38,17 @@ public class Cars {
         return mirrors;
     }
 
+
+
+    public void addwheel(wheel wheel) {
+        this.wheels.add(wheel);
+    }
+
+    public List <wheel> getWheels() {
+        return wheels;
+    }
+
+
     //Methode
     public void drive() {
         //this.fuelAmount = this.fuelAmount- fuelUsage;
@@ -42,6 +56,8 @@ public class Cars {
 
 
     }
+
+
 
     public void dobreak() {
 
@@ -95,6 +111,8 @@ public class Cars {
     public Engine getEngine() {
         return engine;
     }
+
+
 }
 
 

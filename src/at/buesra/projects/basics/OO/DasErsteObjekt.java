@@ -12,10 +12,31 @@ public class DasErsteObjekt {
         Cars c1 = new Cars(e1,100,"blue","1234",100,100);
         c1.addMirror(m1);
         c1.addMirror(m2);
+        wheel w1 = new wheel("bmw","vorne links");
+        wheel w2 = new wheel("bmw","vorne rechts");
+        wheel w3 = new wheel("bmw","hinten links");
+        wheel w4 = new wheel("bmw","hinten rechts");
 
-        c1.getMirrors().get(0).getPosAndSize();
+        Cars c2 = new Cars(e1,80,"yellow","abcd",100,100);
 
-        c1.setFuelAmount(80);
+        c2.getWheels().add(w1);
+        c2.getWheels().add(w2);
+        c2.getWheels().add(w3);
+        c2.getWheels().add(w4);
+        c2.getMirrors().add(m1);
+        c2.getMirrors().add(m2);
+        for (int i = 0; i < c2.getWheels().size(); i++) {
+            c2.getWheels().get(i).getBrandAndPos();
+        }
+
+        for (int i = 0; i < c2.getMirrors().size(); i++) {
+            c2.getMirrors().get(i).getPosAndSize();
+        }
+
+
+        //c1.getMirrors().get(0).getPosAndSize();
+
+        //c1.setFuelAmount(80);
 
         // test
 
@@ -39,6 +60,6 @@ public class DasErsteObjekt {
         //System.out.println(c1.getFuelAmount());
 
         c1.getEngine().drive(100);
-        System.out.println(c1.getEngine().getTank());
+        //System.out.println(c1.getEngine().getTank());
     }
 }
