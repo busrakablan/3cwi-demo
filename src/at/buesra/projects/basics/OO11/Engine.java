@@ -11,4 +11,8 @@ public class Engine {
     public int getLeistung() {
         return leistung;
     }
+
+    public Engine(int leistung) {
+        this.leistung = leistung;
+    }
 }

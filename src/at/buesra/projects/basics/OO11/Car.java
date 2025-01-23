@@ -10,14 +10,18 @@ public class Car {
     private int speed;
     private int price;
     private int consumption;
-    private List<Producer> producers;
+    private Producer producer;
     private Engine engine;
 
 
-    public Car(){
-        this.producers = new ArrayList<Producer>();
-    };
-
+    public Car(String color, int speed, int price, int consumption, Producer producer, Engine engine) {
+        this.color = color;
+        this.speed = speed;
+        this.price = price;
+        this.consumption = consumption;
+        this.producer = producer;
+        this.engine = engine;
+    }
 
     public void addProducer(Producer producer){
         Producer.add(producer);
