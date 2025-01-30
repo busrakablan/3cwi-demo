@@ -6,8 +6,8 @@ public class main {
     Producer p2 = new Producer("nejo","Bulgaria",20);
     Producer p3 = new Producer("Miray", "Turkey", 25);
 
-    Engine e1 = new Engine(120,)
+    Engine e1 = new Engine(120,Engine.TYPE.BENZIN);
 
-    Car c1 = new Car("blue",120, 18000,70,p2,)
+    Car c1 = new Car("blue",120, 18000,70,p2,e1);
 
 }
