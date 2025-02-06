@@ -26,5 +26,13 @@ public class Car {
     public void addProducer(Producer producer){
         Producer.add(producer);
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 }
 

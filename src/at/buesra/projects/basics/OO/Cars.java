@@ -102,7 +102,9 @@ public class Cars {
 
 
 
-
+    public void setCarcolor(String carcolor) {
+        this.carcolor = carcolor;
+    }
 
     public int getGetRemainingRange() {
         return getRemainingRange;
