@@ -1,4 +1,4 @@
-package at.buesra.projects.basics;
+package at.buesra.projects.basics.finalsample;
 
 public class Final {
         final int ZAHL = 10; // Diese Zahl bleibt immer 10
