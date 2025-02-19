@@ -16,4 +16,14 @@ public class Truck extends Car{
     }
 
 
+    @Override
+    public void drive() {
+        System.out.println(" I am driving the truck - consumption is high");
+        //super.drive();
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("I am breaking .... truck");
+    }
 }

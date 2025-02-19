@@ -13,6 +13,8 @@ public class main {
         Truck t1 = new Truck("blue",100,12000,70,p1,e1,"trailer1");
 
         System.out.println(t1.getColor() + t1.getTrailer());
+        t1.drive();
+        t1.stop();
     }
 
 

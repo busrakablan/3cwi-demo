@@ -34,5 +34,13 @@ public class Car {
     public void setColor(String color) {
         this.color = color;
     }
+
+    public void drive () {
+        System.out.println("I am driving");
+    }
+
+    public void stop () {
+        System.out.println("I am breaking.......car");
+    }
 }
 
