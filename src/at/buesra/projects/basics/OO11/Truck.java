@@ -15,4 +15,5 @@ public class Truck extends Car{
         return trailer;
     }
 
+
 }
