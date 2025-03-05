@@ -1,7 +1,7 @@
 package at.buesra.projects.basics.OO16;
 
 public class PhoneFile {
-    private int size;
+    public static int size;
     private String name;
 
     public int getSize() {

@@ -3,28 +3,30 @@ package at.buesra.projects.basics.OO16;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Speicherkarte extends Phone{
-    private int capacity=5;
+public class Speicherkarte {
+    private int capacity = 20;
     private List<PhoneFile> fotos = new ArrayList<PhoneFile>();
 
     public Speicherkarte(String color) {
-        super(color);
+        super();
     }
 
     public void saveFile(PhoneFile phoneFile) {
+        changeCapacity(phoneFile.getSize());
         fotos.add(phoneFile);
     }
 
-    public void getAllFiles(){
-       for( PhoneFile foto : fotos){
-           System.out.println(foto.getName());
-           System.out.println(foto.getSize());
-           System.out.println("");
-       }
+    public List<PhoneFile> getAllFiles() {
+       return fotos;
     }
 
-    public void sizecapacity(){
-        capacity=capacity-PhoneFile.;
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void changeCapacity(int size) {
+        this.capacity = this.capacity - size;
+
     }
 
 }
